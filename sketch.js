@@ -16,10 +16,10 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	paper = new Paper();
+	paper = new Paper(100, 50, 25);
 	
 	
-	dustbin2 = new Dustbin(550, 600, 150, 1);
+	//dustbin2 = new Dustbin(550, 600, 150, 1);
 	
 
 	ground1 = new Ground(400, 690, 800, 20);
@@ -34,20 +34,20 @@ function setup() {
 
 
 function draw() {
-  rectMode(CENTER);
+  
   background(0);
 
   paper.display();
 
  
-  dustbin2.display();
+  //dustbin2.display();
   
 
   ground1.display();
   ground2.display();
   ground3.display();
   
-  drawSprites();
+  
  
 }
 

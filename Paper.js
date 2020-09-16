@@ -6,8 +6,8 @@ class Paper{
             friction: 0.5,
             density: 1.2
         }
-        this.body = Bodies.circle(100, 50, 52.5, options);
-        this.radius = 25;
+        this.body = Bodies.circle(x, y, radius, options);
+        this.radius = radius;
         
         World.add(world, this.body);
     }
